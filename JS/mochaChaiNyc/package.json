@@ -1,0 +1,24 @@
+{
+  "name": "js-test-mochai-chai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "nyc": "^13.3.0"
+  },
+  "jest": {
+   "coverageReporters": ["json"]
+  },
+  "nyc": {
+   "reporter": ["lcov", "text"],
+   "tempDirectory": "../coverage"
+  }
+}
